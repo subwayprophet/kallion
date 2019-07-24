@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:leadership="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#citation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#citation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#mentionedIn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#mentionedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#isMentionedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#isMentionedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#mentions"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#mentions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#mentions"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#gender"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#build_trust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#build_trust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#ADP_6-22:_Army_Leadership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#communicate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#communicate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#competency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#competency">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#power"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#concept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#excellence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#excellence"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#extend_influence_beyond_chain_of_command -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#extend_influence_beyond_chain_of_command">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#ADP_6-22:_Army_Leadership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#give_award_to -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#give_award_to">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#honor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#habit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#habit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#honor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#honor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+        <mentionedIn rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Cyropaedia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#intellect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#intellect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#lead_by_example -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#lead_by_example">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#show"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#lead_others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#lead_others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#level_up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#level_up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#technical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#power"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#praise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#praise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#honor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#presence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#presence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#provide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#provide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#virtuous"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#show -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#show">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#technical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#technical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#virtuous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#virtuous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#action"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Cyrus_the_Great -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Cyrus_the_Great">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Cyropaedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Cyropaedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Iliad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Iliad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Memorabilia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Memorabilia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Odyssey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Odyssey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Xenophon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Xenophon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+        <gender>male</gender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#cyrus_shows_himself_adorned_with_arete -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#cyrus_shows_himself_adorned_with_arete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#show"/>
+        <leadership:mentions rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Cyrus_the_Great"/>
+        <citation rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cyropaedia 8.1.21</citation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#discipline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#discipline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#empathy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#empathy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#ADP_6-22:_Army_Leadership -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#ADP_6-22:_Army_Leadership">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
