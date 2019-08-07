@@ -750,12 +750,6 @@
     
 
 
-    <!-- http://kallion.orgleadership#john_kallion_sketchbook -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#john_kallion_sketchbook"/>
-    
-
-
     <!-- http://kallion.orgleadership#law -->
 
     <owl:NamedIndividual rdf:about="http://kallion.orgleadership#law">
