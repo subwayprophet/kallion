@@ -2,13 +2,16 @@
 <rdf:RDF xmlns="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#"
      xml:base="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:src="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#src:"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:leadership="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#"
+     xmlns:kallion="http://kallion.orgleadership#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:untitled-ontology-17="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership"/>
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#"
+     xmlns:sys="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#sys:">
+    <owl:Ontology rdf:about="http://kallion.orgleadership"/>
     
 
 
@@ -20,6 +23,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#src:accordingTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#src:accordingTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#sys:contextDifference -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#sys:contextDifference"/>
     
 
 
@@ -46,6 +61,24 @@
     
 
 
+    <!-- http://kallion.orgleadership#develops -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.orgleadership#develops"/>
+    
+
+
+    <!-- http://kallion.orgleadership#transmit -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.orgleadership#transmit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#for"/>
+    
+
+
     <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#isMentionedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#isMentionedBy">
@@ -61,6 +94,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#recommend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#recommend"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#takeObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#takeObject"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -69,6 +114,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#language"/>
     
 
 
@@ -86,6 +137,147 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://kallion.orgleadership#event -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#event"/>
+    
+
+
+    <!-- http://kallion.orgleadership#expertise -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#expertise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#excellence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.orgleadership#good -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#good"/>
+    
+
+
+    <!-- http://kallion.orgleadership#kallion_advisor -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#kallion_advisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.orgleadership#kallion_director -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#kallion_director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.orgleadership#period -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#period">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#time"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.orgleadership#recurring -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#recurring">
+        <rdfs:subClassOf rdf:resource="http://kallion.orgleadership#event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.orgleadership#year -->
+
+    <owl:Class rdf:about="http://kallion.orgleadership#year">
+        <rdfs:subClassOf rdf:resource="http://kallion.orgleadership#period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#bios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#bios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#exercise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#exercise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#bios"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#faculty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#intellect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#intellect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#logic_puzzle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#logic_puzzle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#exercise"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#intellect"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#technical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#read -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#read">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#bios"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#intellect"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#schedulable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#schedulable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#bios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#telos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#telos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#word -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#word"/>
     
 
 
@@ -282,6 +474,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#virtuous">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#action"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#habit"/>
     </owl:Class>
     
 
@@ -297,10 +490,428 @@
     
 
 
+    <!-- http://kallion.orgleadership#Andreas_Akaras -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Andreas_Akaras">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#arete"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Ed_Zakreski -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Ed_Zakreski">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Jamie_Raskin -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Jamie_Raskin">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_advisor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Kallion_Leadership_Sketchbook -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Kallion_Leadership_Sketchbook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#habit"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#text"/>
+        <kallion:develops rdf:resource="http://kallion.orgleadership#emotional_intelligence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Kallion_Leadership_Studio -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Kallion_Leadership_Studio">
+        <rdf:type rdf:resource="http://kallion.orgleadership#recurring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Kimberly_Sandridge -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Kimberly_Sandridge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#peace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Lanah_Koelle -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Lanah_Koelle">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_advisor"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#integrity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Malliron_Hodge -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Malliron_Hodge">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Mallory_Monaco_Caterine -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Mallory_Monaco_Caterine">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#empowerment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Mark_Young -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Mark_Young">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_advisor"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#connection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Monique_Maley -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Monique_Maley">
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#rebirth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Morowa_Yejide -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Morowa_Yejide">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_advisor"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#critical_thinking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Nadia_Hashimi -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Nadia_Hashimi">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Paul_Ellis -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Paul_Ellis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#depth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Rhonda_Knight -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Rhonda_Knight">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_advisor"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#intellectual_curiosity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Sarah_Ferrario -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Sarah_Ferrario">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#creativity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Study_2_Practice_Workshop -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Study_2_Practice_Workshop">
+        <rdf:type rdf:resource="http://kallion.orgleadership#recurring"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#Susannah_Wellford -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#Susannah_Wellford">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#arete -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#arete">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+        <owl:sameAs rdf:resource="http://kallion.orgleadership#excellence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#connection -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#connection">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#creativity -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#creativity">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#critical_thinking -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#critical_thinking">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#depth -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#depth">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#emotional_intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#emotional_intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#faculty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#empowerment -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#empowerment">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#excellence -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#excellence">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#immortality -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#immortality">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#inclusiveness -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#inclusiveness">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#information_technology -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#information_technology">
+        <rdf:type rdf:resource="http://kallion.orgleadership#expertise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#integrity -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#integrity">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#intellectual_curiosity -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#intellectual_curiosity">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#john_kallion_sketchbook -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#john_kallion_sketchbook"/>
+    
+
+
+    <!-- http://kallion.orgleadership#law -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#law">
+        <rdf:type rdf:resource="http://kallion.orgleadership#expertise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#medicine -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#medicine">
+        <rdf:type rdf:resource="http://kallion.orgleadership#expertise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#military -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#military">
+        <rdf:type rdf:resource="http://kallion.orgleadership#expertise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#peace -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#peace">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#politics -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#politics">
+        <rdf:type rdf:resource="http://kallion.orgleadership#expertise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.orgleadership#rebirth -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.orgleadership#rebirth">
+        <rdf:type rdf:resource="http://kallion.orgleadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Cyrus_the_Great -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Cyrus_the_Great">
         <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#John_Esposito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#John_Esposito">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#immortality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Norman_Sandridge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Norman_Sandridge">
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#person"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#inclusiveness"/>
+        <leadership:recommend rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#read_the_cyropaedia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#arkhon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#arkhon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#word"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#leader"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#arkhon"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#leader"/>
+        <sys:contextDifference>but not really. arkhon is more etymologically salient and, in athenian texts, has a technical legal meaning.</sys:contextDifference>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#assert_consistently -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#assert_consistently">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#telos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#leader -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#leader">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#word"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#arkhon"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#leader"/>
+        <sys:contextDifference>but not really. arkhon is more etymologically salient and, in athenian texts, has a technical legal meaning.</sys:contextDifference>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#read_the_cyropaedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#read_the_cyropaedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#read"/>
+        <leadership:for rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#trust_the_trustworthy"/>
+        <leadership:takeObject rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#Cyropaedia"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#read_the_cyropaedia"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#for"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#trust_the_trustworthy"/>
+        <src:accordingTo rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#John_Esposito"/>
+        <src:accordingTo rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#Norman_Sandridge"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#see_entailments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#see_entailments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#telos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#solve_a_project_euler_problem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#solve_a_project_euler_problem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#logic_puzzle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#schedulable"/>
+        <leadership:for rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#assert_consistently"/>
+        <leadership:for rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#see_entailments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#trust_the_trustworthy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#trust_the_trustworthy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/leadership#telos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#build_trust"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnesposito/ontologies/2019/6/untitled-ontology-17#leaderly"/>
     </owl:NamedIndividual>
     
 
