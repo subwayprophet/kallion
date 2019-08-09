@@ -1,19 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://kallion.org/ontology/leadership#"
      xml:base="http://kallion.org/ontology/leadership"
-     xmlns:src="http://kallion.org/ontology/leadership#src:"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:sys="http://kallion.org/ontology/leadership#sys:"
-     xmlns:untitled-ontology-17="http://kallion.org/ontology/leadership#"
      xmlns:sys2="http://kallion.org/ontology/leadership#sys:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:leadership="http://kallion.org/ontology/leadership#"
      xmlns:kallion="http://kallion.orgleadership#"
-     xmlns:leadership1="http://kallion.org/ontology/leadership#"
-     xmlns:src3="http://kallion.org/ontology/leadership#src:">
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:src3="http://kallion.org/ontology/leadership#src:"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-17="http://kallion.org/ontology/leadership#">
     <owl:Ontology rdf:about="http://kallion.org/ontology/leadership"/>
     
 
@@ -29,18 +25,6 @@
     
 
 
-    <!-- http://kallion.org/ontology/leadership#src:accordingTo -->
-
-    <owl:AnnotationProperty rdf:about="http://kallion.org/ontology/leadership#src:accordingTo"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#sys:contextDifference -->
-
-    <owl:AnnotationProperty rdf:about="http://kallion.org/ontology/leadership#sys:contextDifference"/>
-    
-
-
     <!-- http://kallion.org/ontology/leadership#citation -->
 
     <owl:AnnotationProperty rdf:about="http://kallion.org/ontology/leadership#citation"/>
@@ -50,6 +34,18 @@
     <!-- http://kallion.org/ontology/leadership#mentionedIn -->
 
     <owl:AnnotationProperty rdf:about="http://kallion.org/ontology/leadership#mentionedIn"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#src:accordingTo -->
+
+    <owl:AnnotationProperty rdf:about="http://kallion.org/ontology/leadership#src:accordingTo"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#sys:contextDifference -->
+
+    <owl:AnnotationProperty rdf:about="http://kallion.org/ontology/leadership#sys:contextDifference"/>
     
 
 
@@ -64,21 +60,60 @@
     
 
 
-    <!-- http://kallion.orgleadership#develops -->
+    <!-- http://kallion.org/ontology/leadership#causes -->
 
-    <owl:ObjectProperty rdf:about="http://kallion.orgleadership#develops"/>
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#causes"/>
     
 
 
-    <!-- http://kallion.orgleadership#transmit -->
+    <!-- http://kallion.org/ontology/leadership#defines -->
 
-    <owl:ObjectProperty rdf:about="http://kallion.orgleadership#transmit"/>
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#defines"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#dependsOn"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#doesNotRequireState -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#doesNotRequireState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://kallion.org/ontology/leadership#requiresState"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://kallion.org/ontology/leadership#for -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#for"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#grounded_in -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#grounded_in"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#identifies -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#identifies"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#influences -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#influences"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#isInText -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#isInText"/>
     
 
 
@@ -103,9 +138,29 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#requiresState -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#requiresState"/>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#takeObject -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#takeObject"/>
+    
+
+
+    <!-- http://kallion.orgleadership#develops -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.orgleadership#develops">
+        <rdfs:subPropertyOf rdf:resource="http://kallion.org/ontology/leadership#causes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kallion.orgleadership#transmit -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.orgleadership#transmit"/>
     
 
 
@@ -120,15 +175,29 @@
     
 
 
-    <!-- http://kallion.org/ontology/leadership#language -->
+    <!-- http://kallion.org/ontology/leadership#citation -->
 
-    <owl:DatatypeProperty rdf:about="http://kallion.org/ontology/leadership#language"/>
+    <owl:DatatypeProperty rdf:about="http://kallion.org/ontology/leadership#citation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#fullText -->
+
+    <owl:DatatypeProperty rdf:about="http://kallion.org/ontology/leadership#fullText"/>
     
 
 
     <!-- http://kallion.org/ontology/leadership#gender -->
 
     <owl:DatatypeProperty rdf:about="http://kallion.org/ontology/leadership#gender"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#language -->
+
+    <owl:DatatypeProperty rdf:about="http://kallion.org/ontology/leadership#language"/>
     
 
 
@@ -140,6 +209,318 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#action -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#action"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#article -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#article">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#attribute -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#attribute"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#bios -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#bios">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#build_trust -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#build_trust">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+        <rdfs:isDefinedBy rdf:resource="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#character -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#character">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#communicate -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#communicate">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#competency -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#competency">
+        <owl:equivalentClass rdf:resource="http://kallion.org/ontology/leadership#power"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#concept -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#concept"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#definition -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#definition">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#excellence -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#excellence"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#exercise -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#exercise">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#bios"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#extend_influence_beyond_chain_of_command -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#extend_influence_beyond_chain_of_command">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+        <rdfs:isDefinedBy rdf:resource="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#faculty -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#faculty"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#focus -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#focus">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#give_award_to -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#give_award_to">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#honor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#habit -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#habit"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#honor -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#honor">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#intellect -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#intellect">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#attribute"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#faculty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#lead_by_example -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#lead_by_example">
+        <owl:equivalentClass rdf:resource="http://kallion.org/ontology/leadership#show"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#lead_others -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#lead_others">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#leaderly -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#leaderly">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#level_up -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#level_up">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#technical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#logic_puzzle -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#logic_puzzle">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#exercise"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#intellect"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#technical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#motivation -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#motivation">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#psychological"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#telos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#person -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#person"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#power -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#power"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#praise -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#praise">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#honor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#presence -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#presence">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#provide -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#provide">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#psychological -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#psychological">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#read -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#read">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#bios"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#intellect"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#schedulable -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#schedulable">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#bios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#show -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#show">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#technical -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#technical">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#telos -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#telos">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#text -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#text"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#time -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#time">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#virtuous -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#virtuous">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#habit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#word -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#word"/>
     
 
 
@@ -203,285 +584,6 @@
     
 
 
-    <!-- http://kallion.org/ontology/leadership#bios -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#bios">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#exercise -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#exercise">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#bios"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#habit"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#faculty -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#faculty"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#intellect -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#intellect">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#faculty"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#logic_puzzle -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#logic_puzzle">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#exercise"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#intellect"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#technical"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#read -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#read">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#bios"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#intellect"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#schedulable -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#schedulable">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#bios"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#telos -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#telos">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#time -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#time">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#word -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#word"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#action -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#action"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#attribute -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#attribute"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#build_trust -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#build_trust">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-        <rdfs:isDefinedBy rdf:resource="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#character -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#character">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#attribute"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#communicate -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#communicate">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#competency -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#competency">
-        <owl:equivalentClass rdf:resource="http://kallion.org/ontology/leadership#power"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#concept -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#concept"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#excellence -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#excellence"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#extend_influence_beyond_chain_of_command -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#extend_influence_beyond_chain_of_command">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-        <rdfs:isDefinedBy rdf:resource="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#give_award_to -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#give_award_to">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#honor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#habit -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#habit"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#honor -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#honor">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-        <untitled-ontology-17:mentionedIn rdf:resource="http://kallion.org/ontology/leadership#Cyropaedia"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#intellect -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#intellect">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#attribute"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#lead_by_example -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#lead_by_example">
-        <owl:equivalentClass rdf:resource="http://kallion.org/ontology/leadership#show"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#lead_others -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#lead_others">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#leaderly -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#leaderly">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#level_up -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#level_up">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#technical"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#person -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#person"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#power -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#power"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#praise -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#praise">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#honor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#presence -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#presence">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#attribute"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#provide -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#provide">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#show -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#show">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#technical -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#technical">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
-    </owl:Class>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#text -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#text"/>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#virtuous -->
-
-    <owl:Class rdf:about="http://kallion.org/ontology/leadership#virtuous">
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#action"/>
-        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#habit"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -490,6 +592,436 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Army_Leadership_Manual_on_leadership -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Army_Leadership_Manual_on_leadership">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#definition"/>
+        <isInText rdf:resource="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership"/>
+        <citation>https://usacac.army.mil/sites/default/files/misc/doctrine/CDG/cdg_resources/manuals/adp/adp6_22_new.pdf</citation>
+        <fullText>Leadership is the process of influencing people by providing purpose, direction, and motivation to accomplish the mission and improve the organization.</fullText>
+        <rdfs:comment>Leadership is the process of influencing people by providing purpose, direction, and motivation to accomplish the mission and improve the organization.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Cambyses -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Cambyses">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Cyropaedia -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Cyropaedia">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Cyropaedia_1.6.7_on_leadership -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Cyropaedia_1.6.7_on_leadership">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#definition"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#leadership"/>
+        <doesNotRequireState rdf:resource="http://kallion.org/ontology/leadership#authority"/>
+        <for rdf:resource="http://kallion.org/ontology/leadership#satisfy_need"/>
+        <isInText rdf:resource="http://kallion.org/ontology/leadership#Cyropaedia"/>
+        <mentions rdf:resource="http://kallion.org/ontology/leadership#need"/>
+        <recommend rdf:resource="http://kallion.org/ontology/leadership#provide"/>
+        <citation>Cyropaedia 1.6.7</citation>
+        <fullText>ἐκείνων δέ, ὦ παῖ, ἐπελάθου ἅ ποτε ἐγὼ καὶ σὺ ἐλογιζόμεθα ὡς ἱκανὸν εἴη καὶ καλὸν ἀνδρὶ ἔργον, εἴ τις δύναιτο ἐπιμεληθῆναι ὅπως ἂν αὐτός τε καλὸς κἀγαθὸς δοκίμως γένοιτο καὶ τὰ ἐπιτήδεια αὐτός τε καὶ οἱ οἰκέται ἱκανῶς ἔχοιεν; τὸ δέ, τούτου μεγάλου ἔργου ὄντος, οὕτως ἐπίστασθαι ἀνθρώπων ἄλλων προστατεύειν ὅπως ἕξουσι πάντα τὰ ἐπιτήδεια ἔκπλεω καὶ ὅπως ἔσονται πάντες οἵους δεῖ, τοῦτο θαυμαστὸν δήπου ἡμῖν τότε ἐφαίνετο εἶναι.
+
+My child, have you forgotten those things that you and I once engaged in dialogue over, how it was adequate and respectable for a man if he were able to see to it that he become both certifiably respectable and good and that he and his household be self-sufficient? But, though this is a great deed, to know how to be the prostatēs of other humans in such a way that they have all that they need in abundance and that they will all be the kind of people they need to be, this of course appeared to be most admirable to us at that time--Cambyses, king of the Persians, to his son Cyrus</fullText>
+        <rdfs:comment>ἐκείνων δέ, ὦ παῖ, ἐπελάθου ἅ ποτε ἐγὼ καὶ σὺ ἐλογιζόμεθα ὡς ἱκανὸν εἴη καὶ καλὸν ἀνδρὶ ἔργον, εἴ τις δύναιτο ἐπιμεληθῆναι ὅπως ἂν αὐτός τε καλὸς κἀγαθὸς δοκίμως γένοιτο καὶ τὰ ἐπιτήδεια αὐτός τε καὶ οἱ οἰκέται ἱκανῶς ἔχοιεν; τὸ δέ, τούτου μεγάλου ἔργου ὄντος, οὕτως ἐπίστασθαι ἀνθρώπων ἄλλων προστατεύειν ὅπως ἕξουσι πάντα τὰ ἐπιτήδεια ἔκπλεω καὶ ὅπως ἔσονται πάντες οἵους δεῖ, τοῦτο θαυμαστὸν δήπου ἡμῖν τότε ἐφαίνετο εἶναι.
+
+My child, have you forgotten those things that you and I once engaged in dialogue over, how it was adequate and respectable for a man if he were able to see to it that he become both certifiably respectable and good and that he and his household be self-sufficient? But, though this is a great deed, to know how to be the prostatēs of other humans in such a way that they have all that they need in abundance and that they will all be the kind of people they need to be, this of course appeared to be most admirable to us at that time--Cambyses, king of the Persians, to his son Cyrus</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Cyrus_the_Great -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Cyrus_the_Great">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Iliad -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Iliad">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#John_Esposito -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#John_Esposito">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#immortality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Kevin_Kruse -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Kevin_Kruse">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Kevin_Kruze_on_leadership -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Kevin_Kruze_on_leadership">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#definition"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#leadership"/>
+        <rdfs:comment>Leadership is a process of social influence, which maximizes the efforts of others, toward the achievement of a goal.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Memorabilia -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Memorabilia">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Norman_John_Cyropaedia_Leadership_Behaviors -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Norman_John_Cyropaedia_Leadership_Behaviors">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#article"/>
+        <identifies rdf:resource="http://kallion.org/ontology/leadership#regular_action"/>
+        <mentions rdf:resource="http://kallion.org/ontology/leadership#Cyropaedia"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#Norman_John_Cyropaedia_Leadership_Behaviors"/>
+        <owl:annotatedProperty rdf:resource="http://kallion.org/ontology/leadership#identifies"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#regular_action"/>
+        <rdfs:seeAlso rdf:resource="http://kallion.org/ontology/leadership#Cyropaedia"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Norman_Sandridge -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Norman_Sandridge">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
+        <recommend rdf:resource="http://kallion.org/ontology/leadership#read_the_cyropaedia"/>
+        <kallion:transmit rdf:resource="http://kallion.orgleadership#inclusiveness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Odyssey -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Odyssey">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Xenophon -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Xenophon">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+        <gender>male</gender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#achieve_significant_positive_impact -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#achieve_significant_positive_impact">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#arkhon -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#arkhon">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#word"/>
+        <owl:sameAs rdf:resource="http://kallion.org/ontology/leadership#leader"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#arkhon"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#leader"/>
+        <sys2:contextDifference>but not really. arkhon is more etymologically salient and, in athenian texts, has a technical legal meaning.</sys2:contextDifference>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#assert_consistently -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#assert_consistently">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#auctoritas -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#auctoritas">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+        <owl:sameAs rdf:resource="http://kallion.org/ontology/leadership#authority"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#auctoritas"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#authority"/>
+        <sys2:contextDifference>only if authority is not determined by organizational role</sys2:contextDifference>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#authority -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#authority">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#word"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#auctoritas"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#authority"/>
+        <sys2:contextDifference>only if authority is not determined by organizational role</sys2:contextDifference>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#be_honored -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#be_honored">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#action"/>
+        <causes rdf:resource="http://kallion.org/ontology/leadership#honor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#cyrus_shows_himself_adorned_with_arete -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#cyrus_shows_himself_adorned_with_arete">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#show"/>
+        <mentions rdf:resource="http://kallion.org/ontology/leadership#Cyrus_the_Great"/>
+        <citation rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cyropaedia 8.1.21</citation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#discipline -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#discipline">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#empathy -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#empathy">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#habit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#focus_on_others -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#focus_on_others">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#focus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#focus_on_self -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#focus_on_self">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#focus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#honor -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#honor">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#motivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#influence -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#influence">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#leader -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#leader">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#word"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#arkhon"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#leader"/>
+        <sys2:contextDifference>but not really. arkhon is more etymologically salient and, in athenian texts, has a technical legal meaning.</sys2:contextDifference>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#leadership -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#leadership">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#word"/>
+        <influences rdf:resource="http://kallion.org/ontology/leadership#person"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#leadership"/>
+        <owl:annotatedProperty rdf:resource="http://kallion.org/ontology/leadership#influences"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#person"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Army_Leadership_Manual_on_leadership"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Kevin_Kruze_on_leadership"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#need -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#need">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#attribute"/>
+        <rdfs:comment>prerequisite for life</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#person -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#person">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#provide -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#provide">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#provide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#read_the_cyropaedia -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#read_the_cyropaedia">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#read"/>
+        <for rdf:resource="http://kallion.org/ontology/leadership#trust_the_trustworthy"/>
+        <takeObject rdf:resource="http://kallion.org/ontology/leadership#Cyropaedia"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#read_the_cyropaedia"/>
+        <owl:annotatedProperty rdf:resource="http://kallion.org/ontology/leadership#for"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#trust_the_trustworthy"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#John_Esposito"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Norman_Sandridge"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#regular_action -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#regular_action">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#satisfy_need -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#satisfy_need">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#see_entailments -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#see_entailments">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#shame -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#shame">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#motivation"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://kallion.org/ontology/leadership#shame"/>
+        <owl:assertionProperty rdf:resource="http://kallion.org/ontology/leadership#dependsOn"/>
+        <owl:targetIndividual rdf:resource="http://kallion.org/ontology/leadership#honor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#solve_a_project_euler_problem -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#solve_a_project_euler_problem">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#logic_puzzle"/>
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#schedulable"/>
+        <for rdf:resource="http://kallion.org/ontology/leadership#assert_consistently"/>
+        <for rdf:resource="http://kallion.org/ontology/leadership#see_entailments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#take_pleasure_in_success_of_others -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#take_pleasure_in_success_of_others">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#action"/>
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#take_pleasure_in_success_of_others"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Cambyses"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Cyrus_the_Great"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Norman_Sandridge"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#trust_the_trustworthy -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#trust_the_trustworthy">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#build_trust"/>
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
+    </owl:NamedIndividual>
     
 
 
@@ -801,190 +1333,17 @@
     
 
 
-    <!-- http://kallion.org/ontology/leadership#Cyrus_the_Great -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Cyrus_the_Great">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#John_Esposito -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#John_Esposito">
-        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
-        <kallion:transmit rdf:resource="http://kallion.orgleadership#immortality"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#Norman_Sandridge -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Norman_Sandridge">
-        <rdf:type rdf:resource="http://kallion.orgleadership#kallion_director"/>
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
-        <kallion:transmit rdf:resource="http://kallion.orgleadership#inclusiveness"/>
-        <leadership1:recommend rdf:resource="http://kallion.org/ontology/leadership#read_the_cyropaedia"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#arkhon -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#arkhon">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#word"/>
-        <owl:sameAs rdf:resource="http://kallion.org/ontology/leadership#leader"/>
-    </owl:NamedIndividual>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#arkhon"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
-        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#leader"/>
-        <sys2:contextDifference>but not really. arkhon is more etymologically salient and, in athenian texts, has a technical legal meaning.</sys2:contextDifference>
-    </owl:Axiom>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#assert_consistently -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#assert_consistently">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#leader -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#leader">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#word"/>
-    </owl:NamedIndividual>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#arkhon"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
-        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#leader"/>
-        <sys2:contextDifference>but not really. arkhon is more etymologically salient and, in athenian texts, has a technical legal meaning.</sys2:contextDifference>
-    </owl:Axiom>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#read_the_cyropaedia -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#read_the_cyropaedia">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#read"/>
-        <leadership1:for rdf:resource="http://kallion.org/ontology/leadership#trust_the_trustworthy"/>
-        <leadership1:takeObject rdf:resource="http://kallion.org/ontology/leadership#Cyropaedia"/>
-    </owl:NamedIndividual>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#read_the_cyropaedia"/>
-        <owl:annotatedProperty rdf:resource="http://kallion.org/ontology/leadership#for"/>
-        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#trust_the_trustworthy"/>
-        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#John_Esposito"/>
-        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Norman_Sandridge"/>
-    </owl:Axiom>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#see_entailments -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#see_entailments">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#solve_a_project_euler_problem -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#solve_a_project_euler_problem">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#logic_puzzle"/>
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#schedulable"/>
-        <leadership1:for rdf:resource="http://kallion.org/ontology/leadership#assert_consistently"/>
-        <leadership1:for rdf:resource="http://kallion.org/ontology/leadership#see_entailments"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#trust_the_trustworthy -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#trust_the_trustworthy">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#telos"/>
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#build_trust"/>
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#Cyropaedia -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Cyropaedia">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#Iliad -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Iliad">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#Memorabilia -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Memorabilia">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#Odyssey -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Odyssey">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#Xenophon -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Xenophon">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
-        <untitled-ontology-17:gender>male</untitled-ontology-17:gender>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#cyrus_shows_himself_adorned_with_arete -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#cyrus_shows_himself_adorned_with_arete">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#show"/>
-        <leadership1:mentions rdf:resource="http://kallion.org/ontology/leadership#Cyrus_the_Great"/>
-        <untitled-ontology-17:citation rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Cyropaedia 8.1.21</untitled-ontology-17:citation>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#discipline -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#discipline">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#habit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#empathy -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#empathy">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#habit"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership -->
-
-    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership">
-        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
-    </owl:NamedIndividual>
+    <rdf:Description rdf:about="http://kallion.org/ontology/leadership#honor">
+        <mentionedIn rdf:resource="http://kallion.org/ontology/leadership#Cyropaedia"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
