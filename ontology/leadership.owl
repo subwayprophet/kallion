@@ -212,6 +212,12 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#implement -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#implement"/>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#influences -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#influences">
@@ -272,6 +278,12 @@
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#mentions">
         <rdfs:subPropertyOf rdf:resource="http://kallion.org/ontology/leadership#say"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#overcome -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#overcome"/>
     
 
 
@@ -469,6 +481,14 @@
     <!-- http://kallion.org/ontology/leadership#cause_of_failure -->
 
     <owl:Class rdf:about="http://kallion.org/ontology/leadership#cause_of_failure">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#cause_of_need_to_coordinate -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate">
         <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#cause"/>
     </owl:Class>
     
@@ -1473,10 +1493,36 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#decide -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#decide">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#leaderly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#degree_of_scattering -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#degree_of_scattering">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+        <implement rdf:resource="http://kallion.org/ontology/leadership#physical_distance"/>
+        <implement rdf:resource="http://kallion.org/ontology/leadership#topological_distance"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#depth -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#depth">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#determine -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#determine">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#action"/>
     </owl:NamedIndividual>
     
 
@@ -1501,6 +1547,22 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#diversity_of_skills -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#diversity_of_skills">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#diversity_of_values -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#diversity_of_values">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#emotional_intelligence -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#emotional_intelligence">
@@ -1521,6 +1583,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#empowerment">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#endurance -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#endurance">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#excellence"/>
     </owl:NamedIndividual>
     
 
@@ -1713,6 +1783,22 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#judge -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#judge">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#judgment -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#judgment">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#intellectual"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#law -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#law">
@@ -1749,6 +1835,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
         <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Army_Leadership_Manual_on_leadership"/>
         <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Kevin_Kruze_on_leadership"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#limited_capacity_of_individual -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#limited_capacity_of_individual">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1863,6 +1957,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#overcome -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#overcome">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#action"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#peace -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#peace">
@@ -1884,6 +1986,15 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#person">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#physical_distance -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#physical_distance">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+        <implement rdf:resource="http://kallion.org/ontology/leadership#topological_distance"/>
     </owl:NamedIndividual>
     
 
@@ -2005,6 +2116,25 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#spatial_distance -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#spatial_distance">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+        <implement rdf:resource="http://kallion.org/ontology/leadership#physical_distance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#speed -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#speed">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#excellence"/>
+        <overcome rdf:resource="http://kallion.org/ontology/leadership#physical_distance"/>
+        <overcome rdf:resource="http://kallion.org/ontology/leadership#temporal_distance"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#success -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#success">
@@ -2052,6 +2182,15 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#temporal_distance -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#temporal_distance">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+        <implement rdf:resource="http://kallion.org/ontology/leadership#topological_distance"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#the_public -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#the_public">
@@ -2066,6 +2205,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#the_state">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#political"/>
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#scope"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#topological_distance -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#topological_distance">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
     </owl:NamedIndividual>
     
 
