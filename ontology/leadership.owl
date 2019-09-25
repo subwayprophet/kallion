@@ -125,6 +125,12 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#contain -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#contain"/>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#defines -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#defines"/>
@@ -309,6 +315,14 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#require -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#require">
+        <rdfs:subPropertyOf rdf:resource="http://kallion.org/ontology/leadership#dependsOn"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#requiresState -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#requiresState"/>
@@ -330,6 +344,14 @@
     <!-- http://kallion.org/ontology/leadership#skilledAt -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#skilledAt"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#strengthen -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#strengthen">
+        <rdfs:subPropertyOf rdf:resource="http://kallion.org/ontology/leadership#causes"/>
+    </owl:ObjectProperty>
     
 
 
@@ -617,6 +639,12 @@
     <owl:Class rdf:about="http://kallion.org/ontology/leadership#focus">
         <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#concept"/>
     </owl:Class>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#framework -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#framework"/>
     
 
 
@@ -1320,6 +1348,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#actionable_plans -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#actionable_plans">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#arete -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#arete">
@@ -1429,6 +1465,7 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#capacity_for_self-awareness">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+        <owl:sameAs rdf:resource="http://kallion.org/ontology/leadership#self-awareness"/>
         <facilitate rdf:resource="http://kallion.org/ontology/leadership#diagnose_cause_of_failure"/>
     </owl:NamedIndividual>
     
@@ -1446,6 +1483,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#causes_of_failure">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_failure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#civic-mindedness -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#civic-mindedness">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
     </owl:NamedIndividual>
     
 
@@ -1571,6 +1616,16 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#empathetic_and_reciprocal_relationships -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#empathetic_and_reciprocal_relationships">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+        <require rdf:resource="http://kallion.org/ontology/leadership#empathy"/>
+        <strengthen rdf:resource="http://kallion.org/ontology/leadership#empathy"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#empathy -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#empathy">
@@ -1681,10 +1736,26 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#good_judgment -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#good_judgment">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#honor -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#honor">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#motivation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hope -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hope">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
     </owl:NamedIndividual>
     
 
@@ -1795,6 +1866,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#judgment">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#intellectual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#knowledge -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#knowledge">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#concept"/>
     </owl:NamedIndividual>
     
 
@@ -2048,6 +2127,16 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#reflection_and_assessment -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#reflection_and_assessment">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+        <require rdf:resource="http://kallion.org/ontology/leadership#good_judgment"/>
+        <require rdf:resource="http://kallion.org/ontology/leadership#self-knowledge"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#regular_action -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#regular_action">
@@ -2082,6 +2171,33 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#self-awareness -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#self-awareness">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+        <takeObject rdf:resource="http://kallion.org/ontology/leadership#oneself"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#self-knowledge -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#self-knowledge">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
+        <strengthen rdf:resource="http://kallion.org/ontology/leadership#self-awareness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#sense_of_possibility -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#sense_of_possibility">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+        <causes rdf:resource="http://kallion.org/ontology/leadership#hope"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#sensory_ability -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#sensory_ability">
@@ -2101,6 +2217,24 @@ My child, have you forgotten those things that you and I once engaged in dialogu
         <owl:assertionProperty rdf:resource="http://kallion.org/ontology/leadership#dependsOn"/>
         <owl:targetIndividual rdf:resource="http://kallion.org/ontology/leadership#honor"/>
     </rdf:Description>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#social_consciousness -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#social_consciousness">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#social_consciousness_and_civic_mindedness -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#social_consciousness_and_civic_mindedness">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#civic-mindedness"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#social_consciousness"/>
+    </owl:NamedIndividual>
     
 
 
@@ -2227,10 +2361,35 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#vision -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#vision">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#competency"/>
+        <require rdf:resource="http://kallion.org/ontology/leadership#hope"/>
+        <require rdf:resource="http://kallion.org/ontology/leadership#knowledge"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#ADP_6-22:_Army_Leadership">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Tulane_University’s_Leadership_Framework -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Tulane_University’s_Leadership_Framework">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#framework"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#actionable_plans"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#empathetic_and_reciprocal_relationships"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#reflection_and_assessment"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#self-awareness"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#sense_of_possibility"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#social_consciousness_and_civic_mindedness"/>
+        <contain rdf:resource="http://kallion.org/ontology/leadership#vision"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdfs:comment>because influence is leaderly</rdfs:comment>
