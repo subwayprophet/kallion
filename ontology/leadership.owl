@@ -737,6 +737,14 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#hero -->
+
+    <owl:Class rdf:about="http://kallion.org/ontology/leadership#hero">
+        <rdfs:subClassOf rdf:resource="http://kallion.org/ontology/leadership#person"/>
+    </owl:Class>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#honor -->
 
     <owl:Class rdf:about="http://kallion.org/ontology/leadership#honor">
@@ -1154,6 +1162,24 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Ed_Zakreski">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#kallion_director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Goethals_Allison_Making_Heroes -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Goethals_Allison_Making_Heroes">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#article"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_traditional"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_tragic"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_transcendent"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_transfigured"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_transforming"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_transitional"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_transitory"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_transparent"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_transposed"/>
+        <defines rdf:resource="http://kallion.org/ontology/leadership#hero_trending"/>
     </owl:NamedIndividual>
     
 
@@ -1941,6 +1967,94 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#good_judgment">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#virtuous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_traditional -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_traditional">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_tragic -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_tragic">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_transcendent -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_transcendent">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_transfigured -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_transfigured">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_transforming -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_transforming">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_transitional -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_transitional">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_transitory -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_transitory">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_transparent -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_transparent">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_transposed -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_transposed">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#hero_trending -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#hero_trending">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#hero"/>
     </owl:NamedIndividual>
     
 
