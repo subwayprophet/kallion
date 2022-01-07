@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://kallion.org/ontology/leadership#"
      xml:base="http://kallion.org/ontology/leadership"
-     xmlns:sys2="http://kallion.org/ontology/leadership#sys:"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:arg="http://kallion.org/ontology/leadership#arg:"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:src3="http://kallion.org/ontology/leadership#src:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:src3="http://kallion.org/ontology/leadership#src:"
+     xmlns:sys2="http://kallion.org/ontology/leadership#sys:"
      xmlns:untitled-ontology-17="http://kallion.org/ontology/leadership#">
     <owl:Ontology rdf:about="http://kallion.org/ontology/leadership"/>
     
@@ -162,7 +162,9 @@
 
     <!-- http://kallion.org/ontology/leadership#defines -->
 
-    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#defines"/>
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#defines">
+        <owl:equivalentProperty rdf:resource="http://kallion.org/ontology/leadership#limit"/>
+    </owl:ObjectProperty>
     
 
 
@@ -316,6 +318,12 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#limit -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#limit"/>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#make -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#make"/>
@@ -358,6 +366,12 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#relatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#relatedTo"/>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#require -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#require">
@@ -375,6 +389,14 @@
     <!-- http://kallion.org/ontology/leadership#respondTo -->
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#respondTo"/>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#resultIn -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#resultIn">
+        <rdfs:subPropertyOf rdf:resource="http://kallion.org/ontology/leadership#causes"/>
+    </owl:ObjectProperty>
     
 
 
@@ -416,6 +438,14 @@
 
     <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#transmit">
         <rdfs:subPropertyOf rdf:resource="http://kallion.org/ontology/leadership#say"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#weaken -->
+
+    <owl:ObjectProperty rdf:about="http://kallion.org/ontology/leadership#weaken">
+        <rdfs:subPropertyOf rdf:resource="http://kallion.org/ontology/leadership#causes"/>
     </owl:ObjectProperty>
     
 
@@ -1132,6 +1162,15 @@
     
 
 
+    <!-- http://kallion.org/ontology/leadership#Amelia_Nagoski -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Amelia_Nagoski">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+        <compose rdf:resource="http://kallion.org/ontology/leadership#Burnout"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#Andreas_Akaras -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Andreas_Akaras">
@@ -1149,6 +1188,16 @@
         <fullText>Leadership is the process of influencing people by providing purpose, direction, and motivation to accomplish the mission and improve the organization.</fullText>
         <citation>https://usacac.army.mil/sites/default/files/misc/doctrine/CDG/cdg_resources/manuals/adp/adp6_22_new.pdf</citation>
         <rdfs:comment>Leadership is the process of influencing people by providing purpose, direction, and motivation to accomplish the mission and improve the organization.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Burnout -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Burnout">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#book"/>
+        <discuss rdf:resource="http://kallion.org/ontology/leadership#limits_of_empathy"/>
+        <mentions rdf:resource="http://kallion.org/ontology/leadership#burnout"/>
     </owl:NamedIndividual>
     
 
@@ -1218,6 +1267,15 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Ed_Zakreski">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#kallion_director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#Emily_Nagoski -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#Emily_Nagoski">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#person"/>
+        <compose rdf:resource="http://kallion.org/ontology/leadership#Burnout"/>
     </owl:NamedIndividual>
     
 
@@ -1668,6 +1726,15 @@ My child, have you forgotten those things that you and I once engaged in dialogu
     
 
 
+    <!-- http://kallion.org/ontology/leadership#burnout -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#burnout">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+        <resultIn rdf:resource="http://kallion.org/ontology/leadership#burnout"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://kallion.org/ontology/leadership#capacity_for_self-awareness -->
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#capacity_for_self-awareness">
@@ -1905,7 +1972,14 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#empathy">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#habit"/>
+        <resultIn rdf:resource="http://kallion.org/ontology/leadership#burnout"/>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://kallion.org/ontology/leadership#empathy"/>
+        <owl:annotatedProperty rdf:resource="http://kallion.org/ontology/leadership#resultIn"/>
+        <owl:annotatedTarget rdf:resource="http://kallion.org/ontology/leadership#burnout"/>
+        <src3:accordingTo rdf:resource="http://kallion.org/ontology/leadership#Burnout"/>
+    </owl:Axiom>
     
 
 
@@ -2459,6 +2533,15 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
     <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#limited_capacity_of_individual">
         <rdf:type rdf:resource="http://kallion.org/ontology/leadership#cause_of_need_to_coordinate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://kallion.org/ontology/leadership#limits_of_empathy -->
+
+    <owl:NamedIndividual rdf:about="http://kallion.org/ontology/leadership#limits_of_empathy">
+        <rdf:type rdf:resource="http://kallion.org/ontology/leadership#concept"/>
+        <limit rdf:resource="http://kallion.org/ontology/leadership#empathy"/>
     </owl:NamedIndividual>
     
 
@@ -3072,5 +3155,5 @@ My child, have you forgotten those things that you and I once engaged in dialogu
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
